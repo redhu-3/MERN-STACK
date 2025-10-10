@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Cards</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+   
+    .head {
+      background-color: rgb(7, 7, 71);
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 20px;
+      align-items: center;
+    }
+
+    ul li {
+      color: aliceblue;
+    }
+
+    ul li:first-child {
+      margin-right: auto;
+      margin-left: 20px;
+    }
+
+    nav {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+
+   
+    .section {
+      display: flex;
+      flex-direction: row;
+      margin: 20px;
+      margin-top: 3px;
+    }
+
+    h1 {
+      color: aliceblue;
+      font-size: 50px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .intro-sec1 {
+      width: 50%;
+      padding: 20px;
+      color: aliceblue;
+    }
+
+    .intro-sec {
+      width: 50%;
+      padding: 20px;
+      color: aliceblue;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .intro-sec img {
+      width: 400px;
+      height: 450px;
+      padding-right: 200px;
+    }
+
+    button {
+      background-color: aqua;
+      border-radius: 10px;
+      width: 85px;
+      height: 35px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .body-2 {
+      background-color: white;
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    .b2-sec {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .b2-sec h2 {
+      font-size: 24px;
+      margin-bottom: 40px;
+      color: #000;
+      font-family: Arial, sans-serif;
+    }
+
+    .sec2-ul {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .sec2-ul li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex: 0 0 auto;
+    }
+
+    .card {
+      width: 200px;
+      height: 200px;
+      border: 3px solid rgb(0, 102, 255);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f8f8; 
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      display: block;
+    }
+
+    .sec2-ul li p {
+      font-size: 14px;
+      color: rgb(80, 80, 80);
+      max-width: 180px;
+      margin-top: 10px;
+    }
+  
+    .body-3{
+        background-color: rgb(190, 188, 184);
+        display: flex;
+       align-items: center;
+       width: 100%;
+    }
+    .quo{
+        margin: 50px;
+        padding: 20px;
+    }
+    blockquote{
+        width:500px;
+        padding-left: 500px;
+        
+    }
+    cite p{
+      text-align: right;
+      font-weight: bold;
+    }
+    .bul{
+     background-color: blue;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      margin: 30px;
+
+    }
+    .body-4{
+      display: flex;
+      background-color: blue;
+      justify-content: center;
+      width: 1000px;
+       margin: 30px;
+       margin-left: 500px;
+     
+    }
+    .bul div{
+      margin: auto;
+    }
+    .bul div h3{
+      color: #f8f8f8;
+      font-size:30px;
+      padding: auto;
+    }
+    .bul div button{
+      background-color: blue;
+      color: #f8f8f8;
+      margin-left:100px ;
+      border: 2px solid white;
+      font-size:medium;
+    }
+    .foot{
+      background-color: #3a3a3a;
+      height: 75px;
+      
+    }
+    .copyright p{
+      color: #f8f8f8;
+      display: flex;
+      justify-self: center;
+      padding-top: 30px;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="head">
+    <header>
+      <nav>
+        <ul>
+          <li class="logo">
+            <img class="logo" src="OIP.jpeg" alt="logo">
+          </li>
+          <li>Home page</li>
+          <li>About us</li>
+          <li>Contact us</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="section">
+      <div class="intro-sec1">
+        <h1>This website is awesome</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam veniam dolores magnam. Explicabo expedita tenetur delectus dolorem reprehenderit quam cumque quidem, ab impedit iure earum, repellat minima natus quia dolore.</p>
+        <button>Signup</button>
+      </div>
+      <div class="intro-sec">
+        <img src="sita.jpg" alt="sita">
+      </div>
+    </div>
+  </div>
+
+  <div class="body-2">
+    <div class="b2-sec">
+      <h2>Some random information.</h2>
+      <ul class="sec2-ul">
+        <li>
+          <div class="card">
+            <img src="sita.jpg" alt="sita">
+          </div>
+          <p>this is some subtext under an illustration or image</p>
+        </li>
+        <li>
+          <div class="card">
+            <img src="jailer.jpg" alt="raja rani">
+          </div>
+          <p>this is some subtext under an illustration or image</p>
+        </li>
+        <li>
+          <div class="card">
+            <img src="tourist.avif" alt="raja rani">
+          </div>
+          <p>this is some subtext under an illustration or image</p>
+        </li>
+        <li>
+          <div class="card">
+            <img src="rajarani.jpg" alt="raja rani">
+          </div>
+          <p>this is some subtext under an illustration or image</p>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="body-3">
+    <div class="quo">
+        <blockquote>
+            This is an inspiring quote, or a testimonial from a customer.
+            Maybe it's just falling up some space, or maybe
+            people will actually read it. Who knows? All I knows
+            is that it looks nice.
+       <br><br>
+       
+         <cite><p>-Thro God of Thunder</p></cite>
+        </blockquote>
+    </div>
+  </div>
+  <div class="body-4">
+    <div class="bul">
+      <div>
+        <h3>Call to action It's time!</h3>
+        <p>Signup for our product by clicking that button right over them!</p>
+
+      </div>
+      <div>
+        <button class="sign">signup</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="foot">
+      <div class="copyright">
+        <p>Copyright The Odin project 2021</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

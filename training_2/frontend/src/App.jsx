@@ -9,23 +9,29 @@ import Contact from './pages/Contact';
 import Services from './pages/Services';
 import Navbar from './Components/Navbar';
 import State from './hooks/State';
-
+import Effect from './hooks/Effect';
+import Product from './pages/Product';
+import ProductDetails from './pages/ProductDetails';
 
 const App = () => {
   return (
     <>
-    <State/>
-     <Navbar/>
+      <State />
+      <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/sate" element={<State/>}></Route>
+        <Route path="/state" element={<State />} />
+        <Route path="/effect" element={<Effect />} />
+        <Route path="/products" element={<Product />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
       </Routes>
 
       <h1>hello</h1>
-     
+
       <User
         name="Rani"
         dept="IT"

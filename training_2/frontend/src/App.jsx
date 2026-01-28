@@ -12,12 +12,21 @@ import State from './hooks/State';
 import Effect from './hooks/Effect';
 import Product from './pages/Product';
 import ProductDetails from './pages/ProductDetails';
+import GetUser from './pages/GetUser';
+import GetUserDetails from './pages/GetUserDetails';
+import Reducer from './hooks/Reducer';
+import { createContext } from 'react';
+
+
+export const UserContext = createContext()
+
 
 const App = () => {
   return (
     <>
-      <State />
+    
       <Navbar />
+   
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -28,6 +37,10 @@ const App = () => {
         <Route path="/effect" element={<Effect />} />
         <Route path="/products" element={<Product />} />
         <Route path="/products/:id" element={<ProductDetails />} />
+         <Route path="/users" element={<GetUser />} />
+      <Route path="/users/:id" element={<GetUserDetails />} />
+      <Route path="/reducer" element={<Reducer/>} />
+        
       </Routes>
 
       <h1>hello</h1>

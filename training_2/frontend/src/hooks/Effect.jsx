@@ -5,22 +5,22 @@ import { useEffect } from 'react'
 const Effect = () => {
     const [count,setCount]=useState(0);
     const [user,setUser]=useState([]);
-   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then((response) => response.json())
-      .then((data) => {
-          setUser(data);
-          console.log(data);
-      });
-}, []); // runs only once
+//    useEffect(() => {
+//     fetch('https://jsonplaceholder.typicode.com/users')
+//       .then((response) => response.json())
+//       .then((data) => {
+//           setUser(data);
+//           console.log(data);
+//       });
+// }, []); // runs only once
 
-   // useEffect(()=>
-  //  {
-    //    console.log("From use effect component mount");
-      //  return()=>{
-        //     console.log("component unmount");
-       // }
-    // },[])
+   useEffect(()=>
+   {
+       console.log("From use effect component mount");
+       return()=>{
+            console.log("component unmount");
+       }
+    },[count])
     
   return (
     

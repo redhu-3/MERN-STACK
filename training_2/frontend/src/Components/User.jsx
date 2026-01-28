@@ -1,21 +1,22 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { UserContext } from "../App";
 
+const User = ({ age }) => {
+  const name = useContext(UserContext);
 
-const User = ({name,dep,skills}) => {
+  const skills = ["React", "JavaScript", "CSS"];
+
   return (
     <div>
+      <h1>Hi I am {name} from {age} department</h1>
 
-      <h1>Hi Iam {name} from {dep} department </h1>
       <ol>
-        {skills.map((skill)=>
-        (
-            <li>{skill}</li>
+        {skills.map((skill, index) => (
+          <li key={index}>{skill}</li>
         ))}
-
       </ol>
-      
     </div>
-  )
-}
+  );
+};
 
-export default User
+export default User;

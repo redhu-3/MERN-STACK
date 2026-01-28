@@ -1,5 +1,6 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useEffect } from 'react'
+import { useState} from 'react'
+
 
 const Contact = () => {
   const [form,setform]=useState(
@@ -27,6 +28,10 @@ const Contact = () => {
     e.preventDefault();
     console.log(form)
   }
+  useEffect(()=>
+  {
+    console.log("Hello from use effect")
+  });
   return (
     <div>
       <form action="" onSubmit={handleSubmit}>

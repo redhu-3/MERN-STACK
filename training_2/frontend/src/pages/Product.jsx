@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import { useEffect } from 'react'
+import axios from 'axios'
 // const products = [
 //   { id: 1, name: "laptop", price: "300" },
 //   { id: 2, name: "mouse", price: "100" },
@@ -11,13 +12,13 @@ import { useEffect } from 'react'
 
 const Product = () => {
   const [product,setProduct]=useState([]);
-  
-
+  const getProducts=async()=>
+  {
+    const res= await axios.get('https://fakestoreapi.com/products')
+  }
   useEffect(()=>
   {
-    fetch('https://fakestoreapi.com/products')
-  .then(response => response.json())
-  .then(data => setProduct(data));
+    getProducts()
   },[])
   return (
     <div>

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Navbar.css'
+//import './Navbar.css'
 const Navbar = () => {
   return (
-    <div className="link">
+    <div className="bg-amber-300" py-4 px-4 flex justify-between >
         <Link to="/">Home </Link>
         <Link to="/about">About </Link>
         <Link to="/contact">Contact </Link>
